@@ -1,0 +1,1 @@
+web: java -Dclojure.main.report=stderr -cp target/uberjar/code-evaluator.jar clojure.main -m code-evaluator.core

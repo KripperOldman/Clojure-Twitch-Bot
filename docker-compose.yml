@@ -1,0 +1,15 @@
+services:
+  chatbot:
+    build: chatbot/
+    ports:
+      - "6667:6667"
+    env_file:
+      - chatbot.env
+    restart: unless-stopped
+  code-evaluator:
+    build: code-evaluator/
+    environment:
+      - PORT=80
+    ports:
+      - "3000:80"
+    restart: unless-stopped
