@@ -41,6 +41,8 @@ const tokens = message.split(' ');
     client.say(channel, "Narwhals narwhals swimming in the ocean");
   } else if (command === '!duck') {
     client.say(channel, "...and he waddled awaaay, waddle waddle");
+  } else if (command === '!blout') {
+    client.say(channel, "blout is the owner of clout city");
   }
 });
 
